@@ -1,6 +1,6 @@
 # Getting started with Angular
 
-This tutorial introduces you to the essentials of Angular by walking you through building an e-commerce site with a catalog, shopping cart, and check-out form.
+Building a basic e-commerce site with a catalog, shopping cart, and check-out form.
 
 ## Prerequisites
 
@@ -33,7 +33,5 @@ This guide demonstrates building an application with the following components.
 <div class="lightbox">
   <img src="https://angular.io/generated/images/guide/start/app-components.png" alt="Online store with three components">
 </div>
-
-For more information about components, see [Introduction to Components](guide/architecture-components "Introduction to Components and Templates").
 
 
