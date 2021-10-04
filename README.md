@@ -81,7 +81,7 @@ This section guides you through editing the HTML, also known as the template.
 
 1. Add an `*ngFor` structural directive on a `<div>`, as follows.
 
-  <code-example header="src/app/product-list/product-list.component.html" path="getting-started/src/app/product-list/product-list.component.2.html" region="ngfor">
+  <code-example header="https://angular.io/src/app/product-list/product-list.component.html" path="getting-started/src/app/product-list/product-list.component.2.html" region="ngfor">
   </code-example>
 
   With `*ngFor`, the `<div>` repeats for each product in the list.
@@ -177,7 +177,7 @@ This section walks you through creating a child component, `ProductAlertsCompone
   The `@Component()` decorator indicates that the following class is a component.
   `@Component()` also provides metadata about the component, including its selector, templates, and styles.
 
-  <code-example header="src/app/product-alerts/product-alerts.component.ts" path="getting-started/src/app/product-alerts/product-alerts.component.1.ts" region="as-generated"></code-example>
+  <code-example header="https://angular.io/src/app/product-alerts/product-alerts.component.ts" path="getting-started/src/app/product-alerts/product-alerts.component.1.ts" region="as-generated"></code-example>
 
   Key features in the `@Component()` are as follows:
 
@@ -197,16 +197,16 @@ This section walks you through creating a child component, `ProductAlertsCompone
 
 1. Open `product-alerts.component.html` and replace the placeholder paragraph with a **Notify Me** button that appears if the product price is over $700.
 
-  <code-example header="src/app/product-alerts/product-alerts.component.html" path="getting-started/src/app/product-alerts/product-alerts.component.1.html"></code-example>
+  <code-example header="https://angular.io/src/app/product-alerts/product-alerts.component.html" path="getting-started/src/app/product-alerts/product-alerts.component.1.html"></code-example>
 
 1. To make `ProductAlertsComponent` available to other components in the application, add it to `AppModule`'s declarations in `app.module.ts`.
 
-  <code-example header="src/app/app.module.ts" path="getting-started/src/app/app.module.ts" region="declare-product-alerts"></code-example>
+  <code-example header="https://angular.io/src/app/app.module.ts" path="getting-started/src/app/app.module.ts" region="declare-product-alerts"></code-example>
 
 1. Finally, to display `ProductAlertsComponent` as a child of `ProductListComponent`, add the selector, `<app-product-alerts>` to `product-list.component.html`.
   Pass the current product as input to the component using property binding.
 
-  <code-example header="src/app/product-list/product-list.component.html" path="getting-started/src/app/product-list/product-list.component.5.html" region="app-product-alerts"></code-example>
+  <code-example header="https://angular.io/src/app/product-list/product-list.component.html" path="getting-started/src/app/product-list/product-list.component.5.html" region="app-product-alerts"></code-example>
 
 The new product alert component takes a product as input from the product list.
 With that input, it shows or hides the **Notify Me** button, based on the price of the product.
@@ -232,7 +232,7 @@ The `ProductAlertsComponent` needs to emit an event when the user clicks **Notif
 
 1. In `product-alerts.component.ts`, import `Output` and `EventEmitter` from `@angular/core`.
 
-  <code-example header="src/app/product-alerts/product-alerts.component.ts" path="getting-started/src/app/product-alerts/product-alerts.component.ts" region="imports"></code-example>
+  <code-example header="https://angular.io/src/app/product-alerts/product-alerts.component.ts" path="getting-started/src/app/product-alerts/product-alerts.component.ts" region="imports"></code-example>
 
 1. In the component class, define a property named `notify` with an `@Output()` decorator and an instance of `EventEmitter()`.
   Configuring `ProductAlertsComponent` with an `@Output()` allows the `ProductAlertsComponent` to emit an event when the value of the `notify` property changes.
@@ -241,20 +241,20 @@ The `ProductAlertsComponent` needs to emit an event when the user clicks **Notif
 
 1. In `product-alerts.component.html`, update the **Notify Me** button with an event binding to call the `notify.emit()` method.
 
-    <code-example header="src/app/product-alerts/product-alerts.component.html" path="getting-started/src/app/product-alerts/product-alerts.component.html"></code-example>
+    <code-example header="https://angular.io/src/app/product-alerts/product-alerts.component.html" path="getting-started/src/app/product-alerts/product-alerts.component.html"></code-example>
 
 1. Define the behavior that happens when the user clicks the button.
   The parent, `ProductListComponent`&mdash;not the `ProductAlertsComponent`&mdash;acts when the child raises the event.
   In  `product-list.component.ts`, define an `onNotify()` method, similar to the `share()` method.
 
-  <code-example header="src/app/product-list/product-list.component.ts" path="getting-started/src/app/product-list/product-list.component.ts" region="on-notify"></code-example>
+  <code-example header="https://angular.io/src/app/product-list/product-list.component.ts" path="getting-started/src/app/product-list/product-list.component.ts" region="on-notify"></code-example>
 
 1. Update the `ProductListComponent` to receive data from the `ProductAlertsComponent`.
 
   In `product-list.component.html`, bind `<app-product-alerts>`  to the `onNotify()` method of the product list component.
   `<app-product-alerts>` is what displays the **Notify Me** button.
 
-    <code-example header="src/app/product-list/product-list.component.html" path="getting-started/src/app/product-list/product-list.component.6.html" region="on-notify"></code-example>
+    <code-example header="https://angular.io/src/app/product-list/product-list.component.html" path="getting-started/src/app/product-list/product-list.component.6.html" region="on-notify"></code-example>
 
 1. Click the **Notify Me** button to trigger an alert which reads, "You will be notified when the product goes on sale".
 
