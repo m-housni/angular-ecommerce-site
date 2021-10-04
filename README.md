@@ -36,7 +36,7 @@ This guide demonstrates building an application with the following components.
 * `<app-product-alerts>`&mdash;a component that contains the application's alerts.
 
 <div class="lightbox">
-  <img src="generated/images/guide/start/app-components.png" alt="Online store with three components">
+  <img src="https://angular.io/generated/images/guide/start/app-components.png" alt="Online store with three components">
 </div>
 
 For more information about components, see [Introduction to Components](guide/architecture-components "Introduction to Components and Templates").
@@ -60,7 +60,7 @@ The preview features two areas:
 * a header for a product list, *Products*
 
 <div class="lightbox">
-  <img src="generated/images/guide/start/new-app-all.gif" alt="Starter online store application">
+  <img src="https://angular.io/generated/images/guide/start/new-app-all.gif" alt="Starter online store application">
 </div>
 
 The project section on the left shows the source files that make up the application, including the infrastructure and configuration files.
@@ -99,7 +99,7 @@ This section guides you through editing the HTML, also known as the template.
   The preview pane updates to display the name of each product in the list.
 
   <div class="lightbox">
-    <img src="generated/images/guide/start/template-syntax-product-names.png" alt="Product names added to list">
+    <img src="https://angular.io/generated/images/guide/start/template-syntax-product-names.png" alt="Product names added to list">
   </div>
 
 1. To make each product name a link to product details, add the `<a>` element around `{{ product.name }}`.
@@ -113,7 +113,7 @@ This section guides you through editing the HTML, also known as the template.
     Property binding `[ ]` lets you use the property value in a template expression.
 
     <div class="lightbox">
-      <img src="generated/images/guide/start/template-syntax-product-anchor.png" alt="Product name anchor text is product name property">
+      <img src="https://angular.io/generated/images/guide/start/template-syntax-product-anchor.png" alt="Product name anchor text is product name property">
     </div>
 
 1. Add the product descriptions. On a `<p>` element, use an `*ngIf` directive so that Angular only creates the `<p>` element if the current product has a description.
@@ -126,7 +126,7 @@ This section guides you through editing the HTML, also known as the template.
     Angular doesn't create the `<p>` element because the product's description property is empty.
 
     <div class="lightbox">
-      <img src="generated/images/guide/start/template-syntax-product-description.png" alt="Product descriptions added to list">
+      <img src="https://angular.io/generated/images/guide/start/template-syntax-product-description.png" alt="Product descriptions added to list">
     </div>
 
 1. Add a button so users can share a product.
@@ -138,13 +138,13 @@ This section guides you through editing the HTML, also known as the template.
     Each product now has a **Share** button.
 
     <div class="lightbox">
-      <img src="generated/images/guide/start/template-syntax-product-share-button.png" alt="Share button added for each product">
+      <img src="https://angular.io/generated/images/guide/start/template-syntax-product-share-button.png" alt="Share button added for each product">
     </div>
 
     Clicking the **Share** button triggers an alert that states, "The product has been shared!".
 
     <div class="lightbox">
-      <img src="generated/images/guide/start/template-syntax-product-share-alert.png" alt="Alert box indicating product has been shared">
+      <img src="https://angular.io/generated/images/guide/start/template-syntax-product-share-alert.png" alt="Alert box indicating product has been shared">
     </div>
 
 In editing the template, you have explored some of the most popular features of Angular templates.
@@ -165,7 +165,7 @@ This section walks you through creating a child component, `ProductAlertsCompone
 1. Right click on the `app` folder and use the `Angular Generator` to generate a new component named `product-alerts`.
 
   <div class="lightbox">
-    <img src="generated/images/guide/start/generate-component.png" alt="StackBlitz command to generate component">
+    <img src="https://angular.io/generated/images/guide/start/generate-component.png" alt="StackBlitz command to generate component">
   </div>
 
     The generator creates starter files for the three parts of the component:
@@ -213,7 +213,7 @@ With that input, it shows or hides the **Notify Me** button, based on the price 
 The Phone XL price is over $700, so the **Notify Me** button appears on that product.
 
 <div class="lightbox">
-  <img src="generated/images/guide/start/product-alert-button.png" alt="Product alert button added to products over $700">
+  <img src="https://angular.io/generated/images/guide/start/product-alert-button.png" alt="Product alert button added to products over $700">
 </div>
 
 {@a output}
@@ -259,7 +259,7 @@ The `ProductAlertsComponent` needs to emit an event when the user clicks **Notif
 1. Click the **Notify Me** button to trigger an alert which reads, "You will be notified when the product goes on sale".
 
   <div class="lightbox">
-    <img src="generated/images/guide/start/product-alert-notification.png" alt="Product alert notification confirmation dialog">
+    <img src="https://angular.io/generated/images/guide/start/product-alert-notification.png" alt="Product alert notification confirmation dialog">
   </div>
 
 For more information on communication between components, see [Component Interaction](guide/component-interaction "Component interaction").
