@@ -1,5 +1,5 @@
 <h1>Cart</h1>
 <div class="cart-item" *ngFor="let item of items">
   <span>{{ item.name }}</span> <br>
-  <span>{{ item.price }}</span>
+  <span>{{ item.price | currency }}</span>
 </div>
