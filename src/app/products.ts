@@ -21,9 +21,15 @@ export const products = [
   {
     id: 3,
     name: 'Phone Standard',
-    price: 299,
+    price: 599,
     description: ''
-  }
+  },
+  {
+    id: 4,
+    name: 'Phone Maxi',
+    price: 899,
+    description: 'A great phone with one of the best cameras'
+  },
 ];
 
 
