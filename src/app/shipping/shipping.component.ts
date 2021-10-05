@@ -8,7 +8,9 @@ import { CartService } from '../cart.service';
 })
 export class ShippingComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private cartService: CartService
+  ) { }
 
   ngOnInit() {
   }
